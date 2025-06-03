@@ -56,6 +56,8 @@ Create a new file named `.env.local` in the root of your project and add the fol
 NEXT_PUBLIC_VAPI_WEB_TOKEN=
 NEXT_PUBLIC_VAPI_WORKFLOW_ID=
 
+NEXT_PUBLIC_PROJECT_URL=localhost:3000
+
 GOOGLE_GENERATIVE_AI_API_KEY=
 
 NEXT_PUBLIC_BASE_URL=

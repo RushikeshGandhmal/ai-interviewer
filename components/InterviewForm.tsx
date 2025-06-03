@@ -73,13 +73,16 @@ const InterviewForm = ({ userId }: { userId: string }) => {
         userid: userId,
       };
 
-      const response = await fetch("http://localhost:3000/api/vapi/generate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(payload),
-      });
+      const response = await fetch(
+        `${process.env.NEXT_PUBLIC_PROJECT_URL}/api/vapi/generate`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to generate interview questions");
